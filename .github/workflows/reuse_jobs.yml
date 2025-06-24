@@ -31,8 +31,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: build_artifacts
-          path: |
-            build/**  # Adjust the path to your build output directory
+          path: build  # Adjust the path to your build output directory
 
 
 
