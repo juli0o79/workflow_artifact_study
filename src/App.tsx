@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  /* this is the main page */
   return (
     <div className="App">
       <header className="App-header">
