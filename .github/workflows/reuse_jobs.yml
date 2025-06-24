@@ -16,9 +16,14 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-        
+
       - name: Run build
         run: npm run build
+
+      - name: Log folder files
+        run: |
+          echo "Listing files in the build directory:"
+          ls   
 
         # saving new artifacts
 
