@@ -17,8 +17,19 @@ jobs:
       - name: Install dependencies
         run: npm install
 
+        # saving new artifacts
+
+      - name: Save artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: build_artifacts
+          paths: |
+            build/**  # Adjust the path to your build output directory
+
       - name: Run build
         run: npm run build
+
+
          
         
         
